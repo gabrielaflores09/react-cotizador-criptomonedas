@@ -24,7 +24,7 @@ const Select = styled.select`
 
 const useCriptomoneda = (label, stateInicial, opciones) => {
     
-    console.log(opciones)
+    // console.log(opciones)
     const [state, actualizarState] = useState(stateInicial);
 
     const SelectCripto = () => (
@@ -34,10 +34,10 @@ const useCriptomoneda = (label, stateInicial, opciones) => {
                 onChange={e=> actualizarState(e.target.value)}
                 value={state}
             >
-                {/* {opciones.map(opcion => (
-                    <option key={opcion.codigo} value={opcion.nombre}>{opcion.nombre}</option>
-                ))} */}
-                
+                <option value="">Seleccione criptomoneda...</option>
+                {opciones.map(opcion => (
+                    <option key={opcion.CoinInfo.Id} value={opcion.CoinInfo.Name}>{opcion.CoinInfo.FullName}</option>
+                ))}
             </Select>
         </Fragment>
     );

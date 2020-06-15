@@ -34,8 +34,9 @@ const useMoneda = (label, stateInicial, opciones) => {
                 onChange={e=> actualizarState(e.target.value)}
                 value={state}
             >
+                <option value="">Seleccione moneda...</option>
                 {opciones.map(opcion => (
-                    <option key={opcion.codigo} value={opcion.nombre}>{opcion.nombre}</option>
+                    <option key={opcion.codigo} value={opcion.codigo}>{opcion.nombre}</option>
                 ))}
                 
             </Select>
