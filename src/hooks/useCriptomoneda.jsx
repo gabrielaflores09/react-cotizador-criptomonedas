@@ -6,7 +6,7 @@ const Label = styled.label`
     color: #FFF;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin-top: 2rem;
     display: block;
 `;
@@ -18,7 +18,7 @@ const Select = styled.select`
     -webkit-appearance: none;
     border-radius: 10px;
     border: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
 `;
 
 

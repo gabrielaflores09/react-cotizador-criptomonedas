@@ -14,7 +14,8 @@ const Info = styled.p`
 `;
 
 const Precio = styled.p`
-    font-size: 40px;
+    font-size: 25px;
+    font-weight:bold;
 `;
 
 const Cotizacion = ({cotizacion}) => {
